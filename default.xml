@@ -11,7 +11,7 @@
            fetch="https://github.com" />
 
   <remote  name="liquid"
-           fetch="https://github.com/LiquidRemix"
+           fetch="https://github.com/VenomRom"
            revision="pie" />
 
   <remote  name="lineage"
