@@ -2,6 +2,15 @@
  <img src="https://github.com/VenomRom/android_manifest/blob/pie/VenomRom.jpg" > 
 </p>
 
+Credits
+==========
+
+*LiquidRemix
+*LineageOS
+*GZOSP
+*liquid0624
+*VenkatV
+
 
 VenomRom
 ==============
@@ -19,3 +28,6 @@ To initialize your local repository using the VenomRom trees, use a command like
 Then to sync up:
 
     repo sync -c -jx --force-sync --no-clone-bundle --no-tags
+
+at last:
+time mka liquid 
