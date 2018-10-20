@@ -603,7 +603,6 @@
   <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="venom" />
   <project path="system/vold" name="android_system_vold" groups="pdk" remote="venom" />
   <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="venom" />
-  <project path="vendor/liquid" name="android_vendor_liquid" remote="venom" />
   <project path="vendor/venom" name="android_vendor_venom" remote="venom" />
   <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="venom" />
   <!-- FINISH VENOM -->
