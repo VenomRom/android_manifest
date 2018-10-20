@@ -10,7 +10,7 @@
   <remote  name="github"
            fetch="https://github.com" />
 
-  <remote  name="liquid"
+  <remote  name="venom"
            fetch="https://github.com/VenomRom"
            revision="pie" />
 
@@ -527,8 +527,8 @@
   <project path="tools/tradefederation/core" name="platform/tools/tradefederation" groups="pdk,tradefed" />
   <!-- FINISH AOSP -->
 
-  <!-- START LIQUID -->
-  <project path="build/make" name="android_build" groups="pdk" remote="liquid" >
+  <!-- START VENOM -->
+  <project path="build/make" name="android_build" groups="pdk" remote="venom" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -537,76 +537,76 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="liquid" >
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="venom" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="art" name="android_art" groups="pdk" remote="liquid" />
-  <project path="bionic" name="android_bionic" groups="pdk" remote="liquid" />
-  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="liquid" />
-  <project path="dalvik" name="android_dalvik" groups="pdk-cw-fs,pdk-fs" remote="liquid" />
-  <project path="device/liquid/sepolicy" name="android_device_liquid_sepolicy" remote="liquid" />
-  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="liquid" />
+  <project path="art" name="android_art" groups="pdk" remote="venom" />
+  <project path="bionic" name="android_bionic" groups="pdk" remote="venom" />
+  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="venom" />
+  <project path="dalvik" name="android_dalvik" groups="pdk-cw-fs,pdk-fs" remote="venom" />
+  <project path="device/liquid/sepolicy" name="android_device_liquid_sepolicy" remote="venom" />
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="venom" />
   <!--<project path="external/DUtils" name="android_external_DUtils" remote="liquid" />-->
-  <project path="external/perfetto" name="android_external_perfetto" groups="pdk" remote="liquid" />
-  <project path="external/tinycompress" name="android_external_tinycompress" groups="pdk" remote="liquid" />
-  <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="liquid" />
-  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="liquid" />
-  <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="liquid" />
-  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" groups="pdk" remote="liquid" />
-  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" remote="liquid" />
-  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" groups="pdk" remote="liquid" />
-  <project path="frameworks/support" name="android_frameworks_support" groups="pdk-cw-fs,pdk-fs" remote="liquid" />
-  <project path="hardware/interfaces" name="android_hardware_interfaces" groups="pdk" remote="liquid" />
-  <project path="hardware/qcom/audio-caf/msm8998" name="android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="liquid" revision="liquid-pie-caf-8998" />
-  <project path="hardware/qcom/audio-caf/msm8996" name="android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="liquid" revision="liquid-pie-caf-8996" />
-  <project path="hardware/qcom/audio-caf/sdm845" name="android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="liquid" revision="liquid-pie-caf-845" />
-  <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" groups="qcom,pdk-qcom" remote="liquid" />
-  <project path="hardware/qcom/bt-caf" name="android_hardware_qcom_bt" groups="qcom,pdk-qcom" remote="liquid" revision="pie-caf" />
-  <project path="hardware/qcom/display-caf/msm8998" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="liquid" revision="liquid-pie-caf-8998" />
-  <project path="hardware/qcom/display-caf/msm8996" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="liquid" revision="liquid-pie-caf-8996" />
-  <project path="hardware/qcom/display-caf/sdm845" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="liquid" revision="liquid-pie-caf-845" />
-  <project path="hardware/qcom/fm" name="android_hardware_qcom_fm" groups="qcom" remote="liquid" />
-  <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" groups="qcom,qcom_keymaster,pdk-qcom" remote="liquid"/>
-  <project path="hardware/qcom/media-caf/msm8998" name="android_hardware_qcom_media" groups="qcom,pdk" remote="liquid" revision="liquid-pie-caf-8998" />
-  <project path="hardware/qcom/media-caf/msm8996" name="android_hardware_qcom_media" groups="qcom,pdk" remote="liquid" revision="liquid-pie-caf-8996" />
-  <project path="hardware/qcom/media-caf/sdm845" name="android_hardware_qcom_media" groups="qcom,pdk" remote="liquid" revision="liquid-pie-caf-845" />
-  <project path="hardware/qcom/power" name="android_hardware_qcom_power" groups="qcom,qcom_power" remote="liquid" />
-  <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" groups="qcom_wlan,pdk" remote="liquid" />
-  <project path="hardware/qcom/wlan-caf" name="android_hardware_qcom_wlan" groups="qcom_wlan,pdk" remote="liquid" revision="pie-caf" />
-  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="liquid" />
-  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" groups="pdk-fs" remote="liquid" />
-  <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" remote="liquid" />
-  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" groups="pdk-fs" remote="liquid" />
+  <project path="external/perfetto" name="android_external_perfetto" groups="pdk" remote="venom" />
+  <project path="external/tinycompress" name="android_external_tinycompress" groups="pdk" remote="venom" />
+  <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="venom" />
+  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="venom" />
+  <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="venom" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" groups="pdk" remote="venom" />
+  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" remote="venom" />
+  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" groups="pdk" remote="venom" />
+  <project path="frameworks/support" name="android_frameworks_support" groups="pdk-cw-fs,pdk-fs" remote="venom" />
+  <project path="hardware/interfaces" name="android_hardware_interfaces" groups="pdk" remote="venom" />
+  <project path="hardware/qcom/audio-caf/msm8998" name="android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="venom" revision="pie-caf-8998" />
+  <project path="hardware/qcom/audio-caf/msm8996" name="android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="venom" revision="pie-caf-8996" />
+  <project path="hardware/qcom/audio-caf/sdm845" name="android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="venom" revision="pie-caf-845" />
+  <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" groups="qcom,pdk-qcom" remote="venom" />
+  <project path="hardware/qcom/bt-caf" name="android_hardware_qcom_bt" groups="qcom,pdk-qcom" remote="venom" revision="pie-caf" />
+  <project path="hardware/qcom/display-caf/msm8998" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="venom" revision="pie-caf-8998" />
+  <project path="hardware/qcom/display-caf/msm8996" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="venom" revision="pie-caf-8996" />
+  <project path="hardware/qcom/display-caf/sdm845" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="venom" revision="pie-caf-845" />
+  <project path="hardware/qcom/fm" name="android_hardware_qcom_fm" groups="qcom" remote="venom" />
+  <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" groups="qcom,qcom_keymaster,pdk-qcom" remote="venom"/>
+  <project path="hardware/qcom/media-caf/msm8998" name="android_hardware_qcom_media" groups="qcom,pdk" remote="venom" revision="pie-caf-8998" />
+  <project path="hardware/qcom/media-caf/msm8996" name="android_hardware_qcom_media" groups="qcom,pdk" remote="venom" revision="pie-caf-8996" />
+  <project path="hardware/qcom/media-caf/sdm845" name="android_hardware_qcom_media" groups="qcom,pdk" remote="venom" revision="pie-caf-845" />
+  <project path="hardware/qcom/power" name="android_hardware_qcom_power" groups="qcom,qcom_power" remote="venom" />
+  <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" groups="qcom_wlan,pdk" remote="venom" />
+  <project path="hardware/qcom/wlan-caf" name="android_hardware_qcom_wlan" groups="qcom_wlan,pdk" remote="venom" revision="pie-caf" />
+  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="venom" />
+  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" groups="pdk-fs" remote="venom" />
+  <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" remote="venom" />
+  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" groups="pdk-fs" remote="venom" />
   <!--<project path="packages/apps/DUI" name="android_packages_apps_DUI" remote="liquid" />-->
-  <project path="packages/apps/FMRadio" name="packages_apps_FMRadio" remote="liquid" />
-  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" groups="pdk-fs" remote="liquid" />
+  <project path="packages/apps/FMRadio" name="packages_apps_FMRadio" remote="venom" />
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" groups="pdk-fs" remote="venom" />
   <!--<project path="packages/apps/LiquidOTA" name="android_packages_apps_LiquidOTA" remote="liquid" />-->
   <!--<project path="packages/apps/OmniStyle" name="android_packages_apps_OmniStyle" remote="liquid" />
   <project path="packages/apps/OmniSwitch" name="android_packages_apps_OmniSwitch" remote="liquid" />-->
-  <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" groups="pdk-cw-fs,pdk-fs" remote="liquid" />
-  <project path="packages/apps/PhoneCommon" name="android_packages_apps_PhoneCommon" groups="pdk-cw-fs,pdk-fs" remote="liquid" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="liquid" />
+  <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" groups="pdk-cw-fs,pdk-fs" remote="venom" />
+  <project path="packages/apps/PhoneCommon" name="android_packages_apps_PhoneCommon" groups="pdk-cw-fs,pdk-fs" remote="venom" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="venom" />
   <!--<project path="packages/apps/SlimRecents" name="android_packages_apps_SlimRecents" groups="pdk-fs" remote="liquid" />-->
   <!--<project path="packages/apps/LiquidLounge" name="android_packages_apps_LiquidLounge" remote="liquid" />-->
   <!--<project path ="packages/apps/Bite" name="android_packages_apps_Bite" remote="liquid" />-->
-  <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" groups="pdk-fs" remote="liquid" />
-  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="liquid" />
-  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="liquid" />
-  <project path="packages/services/OmniJaws" name="android_packages_services_OmniJaws" remote="liquid" />
-  <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" groups="pdk-fs" remote="liquid" />
-  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="liquid" />
-  <project path="packages/services/Telephony" name="android_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="liquid" />
-  <project path="system/bt" name="android_system_bt" groups="pdk" remote="liquid" />
-  <project path="system/core" name="android_system_core" groups="pdk" remote="liquid" />
-  <project path="system/qcom" name="android_system_qcom" groups="pdk" remote="liquid" />
-  <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="liquid" />
-  <project path="system/vold" name="android_system_vold" groups="pdk" remote="liquid" />
-  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="liquid" />
-  <project path="vendor/liquid" name="android_vendor_liquid" remote="liquid" />
-  <project path="vendor/venom" name="android_vendor_venom" remote="liquid" />
-  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="liquid" />
-  <!-- FINISH LIQUID -->
+  <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" groups="pdk-fs" remote="venom" />
+  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="venom" />
+  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="venom" />
+  <project path="packages/services/OmniJaws" name="android_packages_services_OmniJaws" remote="venom" />
+  <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" groups="pdk-fs" remote="venom" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="venom" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="venom" />
+  <project path="system/bt" name="android_system_bt" groups="pdk" remote="venom" />
+  <project path="system/core" name="android_system_core" groups="pdk" remote="venom" />
+  <project path="system/qcom" name="android_system_qcom" groups="pdk" remote="venom" />
+  <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="venom" />
+  <project path="system/vold" name="android_system_vold" groups="pdk" remote="venom" />
+  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="venom" />
+  <project path="vendor/liquid" name="android_vendor_liquid" remote="venom" />
+  <project path="vendor/venom" name="android_vendor_venom" remote="venom" />
+  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="venom" />
+  <!-- FINISH VENOM -->
 
   <!-- START LINEAGE -->
   <project path="build/kati" name="android_build_kati" groups="pdk,tradefed" remote="lineage" />
