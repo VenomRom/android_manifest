@@ -34,4 +34,7 @@ Then to sync up:
     repo sync -c -jx --force-sync --no-clone-bundle --no-tags
 
 at last:
+
 time mka venom
+
+Enjoy!!
