@@ -5,11 +5,15 @@
 Credits
 ==========
 
-*LiquidRemix
-*LineageOS
-*GZOSP
-*liquid0624
-*VenkatV
+* LiquidRemix
+
+* LineageOS
+
+* GZOSP
+
+* liquid0624
+
+* VenkatV
 
 
 VenomRom
@@ -30,4 +34,4 @@ Then to sync up:
     repo sync -c -jx --force-sync --no-clone-bundle --no-tags
 
 at last:
-time mka liquid 
+time mka venom
