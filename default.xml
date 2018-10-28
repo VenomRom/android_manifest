@@ -545,7 +545,7 @@
   <project path="bionic" name="android_bionic" groups="pdk" remote="venom" />
   <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="venom" />
   <project path="dalvik" name="android_dalvik" groups="pdk-cw-fs,pdk-fs" remote="venom" />
-  <project path="device/liquid/sepolicy" name="android_device_liquid_sepolicy" remote="venom" />
+  <project path="device/venom/sepolicy" name="android_device_venom_sepolicy" remote="venom" />
   <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="venom" />
   <!--<project path="external/DUtils" name="android_external_DUtils" remote="liquid" />-->
   <project path="external/perfetto" name="android_external_perfetto" groups="pdk" remote="venom" />
@@ -588,8 +588,7 @@
   <project path="packages/apps/PhoneCommon" name="android_packages_apps_PhoneCommon" groups="pdk-cw-fs,pdk-fs" remote="venom" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="venom" />
   <!--<project path="packages/apps/SlimRecents" name="android_packages_apps_SlimRecents" groups="pdk-fs" remote="liquid" />-->
-  <project path="packages/apps/BiteSettings" name="android_packages_apps_BiteSettings" remote="venom" />
-  <project path="packages/apps/Bite" name="android_packages_apps_Bite" remote="venom" />
+  <project path="packages/apps/VenomSettings" name="android_packages_apps_VenomSettings" remote="venom" />
   <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" groups="pdk-fs" remote="venom" />
   <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="venom" />
   <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="venom" />
