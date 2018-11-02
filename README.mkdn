@@ -4,16 +4,16 @@
 
 Credits
 ==========
-
+* AOSP
+* Dirty Unicorns
+* NitrogenOS
+* SuperiorOS
 * LiquidRemix
-
 * LineageOS
-
-* GZOSP
-
-* liquid0624
-
-* VenkatV
+* ABC
+* ArrowOS
+* AOSPExtended
+* DotOS
 
 
 VenomRom
