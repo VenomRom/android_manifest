@@ -1,8 +1,0 @@
-# pack-refs with: peeled fully-peeled sorted 
-a728648e4e4bfb402ac89793f8900abe0f3f0288 refs/remotes/origin/oc
-11e1963173e09faf2254063803ba880f86705d4a refs/remotes/origin/oc-mr1
-8de1aeb9f82c5b42c7d52e016776afccebb5edef refs/remotes/origin/oc-mr2
-dbb5f37a45f0ef2c6d216666b59a600d60f69e3d refs/remotes/origin/oc-mr2-gsi
-6273436358ef31d6ffb612b5616c277293677724 refs/remotes/origin/pie
-938fddd551c7189fb359c87c86a2719c072cff6d refs/remotes/origin/pie-gsi
-b516c6629e432e5361d7ec27b375d3d905b1d562 refs/remotes/origin/test
