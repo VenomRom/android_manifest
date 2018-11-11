@@ -545,7 +545,7 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path "manifest" name="android_manifest" groups="pdk" remote="venom" />
+  <project path="manifest" name="android_manifest" groups="pdk" remote="venom" />
   <project path="art" name="android_art" groups="pdk" remote="venom" />
   <project path="bionic" name="android_bionic" groups="pdk" remote="venom" />
   <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="venom" />
