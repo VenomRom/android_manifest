@@ -8,11 +8,8 @@
   <remote  name="github"
            fetch="https://github.com/" />
 
-    <remote  name="bitbucket"
+  <remote  name="bitbucket"
            fetch="https://bitbucket.org" />
-
-  <remote  name="github"
-           fetch="https://github.com" />
 
   <remote  name="venom"
            fetch="https://github.com/VenomRom"
